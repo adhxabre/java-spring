@@ -12,8 +12,6 @@ Since we're still cool about Java, we will talk about it so feel free to contrib
 <br />
 <br />
 
-## <center>\>>> __Developed by adhxabre__ <<<</center>
+## \>>> __Developed by adhxabre__ <<<
 
-<p align="center">
-    <img src="https://avatars.githubusercontent.com/u/108639591?v=4" alt="userImg" width="20%" height="auto" style="border-radius: 100%; margin: 0 auto">
-</p>
+<img src="https://avatars.githubusercontent.com/u/108639591?v=4" alt="userImg" width="20%" height="auto" style="border-radius: 100%; margin: 0 auto">
