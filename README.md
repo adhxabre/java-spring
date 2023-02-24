@@ -10,7 +10,7 @@ Since we're still cool about Java, we will talk about it so feel free to contrib
 
 ## Warning!
 
-This branch is still in development and will be fixed ASAP, if you want to contribute and help me fix it, I would be really feel graceful for that!
+This branch is still in development and will be fixed ASAP, if you want to contribute and help me fix it, I would be really feel grateful for that!
 Please visit [Issues](https://github.com/adhxabre/java-spring/issues) for more information.
 
 <br />
