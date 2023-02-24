@@ -40,6 +40,7 @@ public class TodoController {
         getTodo.setTitle(todo.getTitle());
         getTodo.setContent(todo.getContent());
         getTodo.setDone(todo.getDone());
+        getTodo.setCategory(todo.getCategory());
 
         Todo updateTodo = todoRepository.save(getTodo);
 

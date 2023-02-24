@@ -1,12 +1,12 @@
 package dumbways.ways.todo.repository;
 
-import dumbways.ways.todo.entity.Todo;
+import dumbways.ways.todo.entity.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TodoRepository extends CrudRepository<Todo, Long> {
+public interface UserRepository extends CrudRepository<User, Long> {
 
-    Todo findById(long id);
+    User findById(long id);
 
 }

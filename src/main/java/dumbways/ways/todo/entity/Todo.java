@@ -1,9 +1,11 @@
 package dumbways.ways.todo.entity;
 
+import java.util.*;
+
+import com.fasterxml.jackson.annotation.*;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "tb_todo")
 public class Todo {
 
     @Column(unique = true)
@@ -20,11 +22,18 @@ public class Todo {
     @Column(name = "is_done", updatable = true)
     private Boolean isDone;
 
+    @JsonBackReference
+    @ManyToOne(fetch = FetchType.LAZY)
+    private User user;
+
+    @ManyToMany(cascade = CascadeType.PERSIST)
+    @JoinTable(name = "todo_category", joinColumns = @JoinColumn(name = "todo_id"), inverseJoinColumns = @JoinColumn(name = "category_id"))
+    private Set<Category> category = new HashSet<>();
+
     public Todo() {
     }
 
     public Todo(String title, String content, Boolean isDone) {
-        super();
         this.title = title;
         this.content = content;
         this.isDone = isDone;
@@ -61,4 +70,21 @@ public class Todo {
     public void setDone(Boolean done) {
         isDone = done;
     }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Set<Category> getCategory() {
+        return category;
+    }
+
+    public void setCategory(Set<Category> category) {
+        this.category = category;
+    }
+
 }
