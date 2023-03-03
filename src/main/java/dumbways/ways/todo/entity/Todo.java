@@ -26,7 +26,7 @@ public class Todo {
     @ManyToOne(fetch = FetchType.LAZY)
     private User user;
 
-    @ManyToMany(cascade = CascadeType.PERSIST)
+    @ManyToMany
     @JoinTable(name = "todo_category", joinColumns = @JoinColumn(name = "todo_id"), inverseJoinColumns = @JoinColumn(name = "category_id"))
     private Set<Category> category = new HashSet<>();
 
